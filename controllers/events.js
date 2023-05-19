@@ -43,3 +43,40 @@ exports.createEvent = async (req, res) => {
     return res.status(500).json(result.error);
   }
 };
+
+exports.updateEvent = async (req, res, next) => {
+  const userId = new ObjectId(req.params.id);
+  const event = {
+    title: req.body.title,
+    location: req.body.location,
+    date: req.body.date,
+    travelTime: req.body.travelTime,
+    repeat: req.body.repeat,
+    intitees: req.body.intitees,
+    showAs: req.body.showAs
+  };
+  const result = await mongodb
+    .getDB()
+    .db()
+    .collection('events')
+    .replaceOne({_id: userId}, event);
+  if (result) {
+    return res.status(204).send();
+  } else {
+    return res.status(500).json(result.error);
+  }
+};
+
+exports.deleteEvent = async (req, res, next) => {
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDB()
+    .db()
+    .collection('events')
+    .deleteOne({ _id: userId });
+  if (result) {
+    return res.status(200).send();
+  } else {
+    return res.status(500).json(result.error);
+  }
+};

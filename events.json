@@ -1,0 +1,52 @@
+{
+  "event": {
+    "title": "Thompson Wedding",
+    "location": "West Jordan, Utah",
+    "date": "08/22/2023",
+    "time": "12:00pm",
+    "travelTime": "20 minutes",
+    "repeat": "Never",
+    "intitees": "Tyler Smith",
+    "showAs": "Busy"
+  },
+  "event2": {
+    "title": "Dinner Date",
+    "location": "Blisters, Rexburg",
+    "date": "05/28/2023",
+    "time": "6:30pm",
+    "travelTime": "30 minutes",
+    "repeat": "Never",
+    "intitees": "June Stevenson",
+    "showAs": "Busy"
+  },
+  "event3": {
+    "title": "Workout",
+    "location": "BYUI Gym",
+    "date": "05/20/2023",
+    "time": "7:00am",
+    "travelTime": "5 minutes",
+    "repeat": "Weekly",
+    "intitees": "None",
+    "showAs": "Busy"
+  },
+  "event4": {
+    "title": "Homework",
+    "location": "Home",
+    "date": "05/22/2023",
+    "time": "12:00 - 3:00pm",
+    "travelTime": "None",
+    "repeat": "Daily",
+    "intitees": "None",
+    "showAs": "Available"
+  },
+  "event5": {
+    "title": "Work Party",
+    "location": "Speakeasy in Idaho Falls",
+    "date": "06/12/2023",
+    "time": "8:00pm",
+    "travelTime": "10 minutes",
+    "repeat": "Never",
+    "intitees": "Tyler Smith",
+    "showAs": "Busy"
+  }
+}

@@ -5,8 +5,8 @@ const doc = {
     title: 'My API',
     description: 'Calendar API',
   },
-  host: 'localhost:5500',
-  schemes: ['http', 'https'],
+  host: 'cse341-project2-ejf9.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';

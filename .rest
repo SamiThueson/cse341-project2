@@ -2,11 +2,17 @@
 
 ### GET all calendars
 GET http://localhost:5500/calendars HTTP/1.1
+### GET one calendar
+GET http://localhost:5500/calendars/6467efedef506eb627501654 HTTP/1.1
+
 
 ### GET all events
 GET http://localhost:5500/events HTTP/1.1
 ### GET one event
 GET http://localhost:5500/events/6467f3514580d20daa1881d6 HTTP/1.1
+###
+GET http://localhost:5500/events/q9834752893 HTTP/1.1
+
 ### CREATE new event
 POST http://localhost:5500/events HTTP/1.1
 content-type: application/json
@@ -44,6 +50,9 @@ DELETE http://localhost:5500/events/6467faf5f459108d69b93d5a HTTP/1.1
 
 ### GET all calendars
 GET https://cse341-project2-ejf9.onrender.com/calendars HTTP/1.1
+### GET one calendar
+GET https://cse341-project2-ejf9.onrender.com/calendars/6467efedef506eb627501654 HTTP/1.1
+
 
 ### GET all events
 GET https://cse341-project2-ejf9.onrender.com/events HTTP/1.1
